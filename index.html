@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Realtime Face Recogntion</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="icon" href="data:image/png;base64,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">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body">
+<center>
+    <section>
+<h1 class="heading">Realtime Face Recognition</h1>
+<hr>
+<br>
+<p class="names">Mom | Dad | Sister | Me</p>
+
+
+</section>
+
+<br>
+<br>
+
+<button class="btn btn-info shadow">Member:</button> <span id="member"></span>
+
+<br>
+
+<br>
+
+<br>
+
+<button class="btn btn-info shadow">Accuracy:</button> <span id="accuracy"></span>
+<br>
+<br>
+<div class="camera"></div>
+</center>
+<script src="main.js"></script>
+</body>
+
+</html>
